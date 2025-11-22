@@ -65,7 +65,7 @@ WSGI_APPLICATION = 'video.wsgi.application'
 
 DATABASES = {
     'default':
-    dj_database_url.config(default=f"splite:///{BASE_DIR / 'db.splite3'}")
+    dj_database_url.config(default=f"splite://{BASE_DIR / 'db.splite3'}")
 }
 
 
