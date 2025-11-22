@@ -1,0 +1,14 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" style="color: white;" href="{% url 'home' %}">VIDEO</a>
+        <form action="{% url 'search' %}" method="POST" style="width: 70%;">
+            {% csrf_token %}
+            <input type="text" name="searched" style="width: 20%;">
+            <button type="submit" class="btn btn" >&#128269;</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+    </div>
+</nav>
