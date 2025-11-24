@@ -106,20 +106,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-# مسیر URL که مرورگر برای استاتیک استفاده می‌کنه
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+MEDIA_URL = "/media/"
 
-# جایی که Django فایل‌های جمع‌آوری شده را قرار میده
+
 STATIC_ROOT = BASE_DIR / "staticfiles"
+MEDIA_ROOT = BASE_DIR / "media"
 
-# مسیر فایل‌های استاتیک در پروژه (در صورت وجود)
 STATICFILES_DIRS = [
-    BASE_DIR / "static"
+    BASE_DIR / "static",
 ]
-
-# Media (اختیاری)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
 
 
 # Default primary key field type
